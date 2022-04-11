@@ -53,6 +53,11 @@ export const NavButton = styled.a`
   font-size: ${HeadingXXXS};
   margin: 0 10px;
   cursor: pointer;
+
+  &:hover {
+    color: ${({ $active }) => ($active ? PrimaryColor : SecondaryColor)};
+    transition: all 0.5s ease;
+  }
 `;
 
 export const ContactButton = styled(Button)`
@@ -63,6 +68,7 @@ export const ContactButton = styled(Button)`
   &:hover {
     background-color: ${PrimaryColor};
     color: ${SecondaryColor};
+    transition: all 1s ease;
   }
 
   &:selected {

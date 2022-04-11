@@ -1,8 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import '../fonts/aqua.ttf';
 import '../fonts/Roboto-Thin.ttf';
 import '../fonts/Roboto-ThinItalic.ttf';
-import { PageBackground } from './_colors';
+import { PageBackground, PrimaryColor, PrimaryWhite } from './_colors';
+import { Aqua, HeadingLG, HeadingXXS } from './_texts';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -34,7 +36,20 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
     font-display: swap;
 }
-
 `;
 
 export default GlobalStyle;
+
+export const Subtitle = styled.h2`
+  color: ${PrimaryColor};
+  font-family: ${Aqua};
+  font-size: ${HeadingXXS};
+  margin: 0;
+`;
+
+export const Title = styled.h1`
+  color: ${PrimaryWhite};
+  font-family: ${Aqua};
+  font-size: ${HeadingLG};
+  margin: 0;
+`;

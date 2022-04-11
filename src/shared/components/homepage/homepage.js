@@ -19,7 +19,6 @@ export const Homepage = ({ active }) => {
 
   return (
     <>
-      <Header active={active} />
       <Wrapper>
         <Overlay opacity={0.4} color={PageBackground} blur={5} />
       </Wrapper>
