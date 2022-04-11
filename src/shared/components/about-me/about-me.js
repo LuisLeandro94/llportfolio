@@ -20,7 +20,7 @@ import {
   Github,
   NameSpan,
 } from './about-me-styles';
-import image from '../../../assets/img2.jpg';
+import image from '../../../assets/img1.jpg';
 import { PrimaryColor } from '../../styles/_colors';
 
 const AboutMe = () => {
