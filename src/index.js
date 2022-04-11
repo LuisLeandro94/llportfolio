@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import LandingPage from './pages/landing-page/landing-page';
 import reportWebVitals from './reportWebVitals';
 import GlobalStyle from './shared/styles/globalStyles';
 
 ReactDOM.render(
   <React.StrictMode>
     <GlobalStyle />
-    <App />
+    <LandingPage />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,14 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
-import '../fonts/aqua.ttf';
-import '../fonts/Roboto-Thin.ttf';
-import '../fonts/Roboto-ThinItalic.ttf';
-import { PageBackground } from './_colors';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    background-color: ${PageBackground};
-  }
-  @font-face {
+@font-face {
     font-family: 'Aqua Grotesque';
     src: url('AquaGrotesque.woff2') format('woff2'),
         url('AquaGrotesque.woff') format('woff');
@@ -35,6 +25,3 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
 }
 
-`;
-
-export default GlobalStyle;

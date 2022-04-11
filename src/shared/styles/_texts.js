@@ -7,6 +7,5 @@ export const HeadingXS = '1.75rem';
 export const HeadingXXS = '1.5rem';
 export const HeadingXXXS = '1.125rem';
 
-export const Aqua = 'Aqua';
+export const Aqua = 'Aqua Grotesque';
 export const Roboto = 'Roboto';
-export const RobotoItalic = 'RobotoItalic';
