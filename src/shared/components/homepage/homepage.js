@@ -1,16 +1,36 @@
 import React from 'react';
 import { useState } from 'react';
-import { Logo, Name, Wrapper } from './homepage-styles';
-import logo from '../../../logo.svg';
+import {
+  Background,
+  Details,
+  DetailsWrapper,
+  Logo,
+  Name,
+  Wrapper,
+} from './homepage-styles';
+import logo from '../../../assets/Luis Logo Letterless.png';
+import { FiGitCommit } from 'react-icons/fi';
+import { Overlay } from '@mantine/core';
+import { PageBackground } from '../../styles/_colors';
+import Header from '../header/header';
 
-export const Homepage = () => {
+export const Homepage = ({ active }) => {
   const [a, setA] = useState(false);
 
   return (
-    <Wrapper>
-      <Logo src={logo} />
-      <Name>Luís Leandro</Name>
-    </Wrapper>
+    <>
+      <Header active={active} />
+      <Wrapper>
+        <Overlay opacity={0.4} color={PageBackground} blur={5} />
+      </Wrapper>
+      <DetailsWrapper>
+        <Logo src={logo} />
+        <Name>Luis Leandro</Name>
+        <Details>
+          Creative Freelancer <FiGitCommit /> Full Stack Developer
+        </Details>
+      </DetailsWrapper>
+    </>
   );
 };
 
