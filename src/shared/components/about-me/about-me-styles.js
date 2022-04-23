@@ -16,12 +16,14 @@ import {
 } from 'react-icons/im';
 
 export const Wrapper = styled.div`
-  display: flex;
+  position: fixed;
   justify-content: center;
   flex-direction: row;
   padding: 8%;
   padding-right: 13%;
   padding-left: 13%;
+  top: 50px;
+  display: flex;
 `;
 
 export const ImageContainer = styled.div`

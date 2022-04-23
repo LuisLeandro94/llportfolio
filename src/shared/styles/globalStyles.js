@@ -10,6 +10,12 @@ const GlobalStyle = createGlobalStyle`
   body {
     background-color: ${PageBackground};
   }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  html {
+    scrollbar-width: none;
+  }
   @font-face {
     font-family: 'Aqua Grotesque';
     src: url('AquaGrotesque.woff2') format('woff2'),

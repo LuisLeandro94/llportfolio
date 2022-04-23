@@ -19,10 +19,10 @@ export const Homepage = ({ active }) => {
 
   return (
     <>
-      <Wrapper>
+      <Wrapper active={active}>
         <Overlay opacity={0.4} color={PageBackground} blur={5} />
       </Wrapper>
-      <DetailsWrapper>
+      <DetailsWrapper active={active}>
         <Logo src={logo} />
         <Name>Luis Leandro</Name>
         <Details>

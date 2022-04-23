@@ -23,11 +23,11 @@ import {
 import image from '../../../assets/img1.jpg';
 import { PrimaryColor } from '../../styles/_colors';
 
-const AboutMe = () => {
+const AboutMe = ({ active }) => {
   const [first, setfirst] = useState(0);
 
   return (
-    <Wrapper>
+    <Wrapper active={active}>
       <ImageContainer>
         <Image src={image} />
       </ImageContainer>
